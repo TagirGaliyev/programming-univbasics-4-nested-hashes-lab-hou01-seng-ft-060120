@@ -1,4 +1,4 @@
-
+require "pry"
 def hopper
 	programmer_hash =
  		{
@@ -110,6 +110,7 @@ def changing_alan
       }
     }
     programmer_hash[:alan_kay][:known_for] = "GUI"
+    binding.pry
 end
 
 def adding_to_dennis
@@ -133,3 +134,5 @@ def adding_to_dennis
     }
     programmer_hash[:dennis_ritchie][:languages].push("Assembly")
 end
+
+changing_alan
